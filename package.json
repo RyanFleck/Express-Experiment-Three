@@ -3,7 +3,8 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "node ./bin/www"
+    "start-old": "node ./bin/www",
+    "start": "nodemon ./bin/www --exec babel-node -e js"
   },
   "dependencies": {
     "cookie-parser": "~1.4.3",
@@ -12,6 +13,28 @@
     "http-errors": "~1.6.2",
     "morgan": "~1.9.0",
     "node-sass-middleware": "0.11.0",
+    "nodemon": "^1.18.4",
     "pug": "2.0.0-beta11"
-  }
+  },
+  "description": "Taking a course on Express, this is a testing ground.",
+  "main": "app.js",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-stage-0": "^6.24.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RyanFleck/Express-Experiment-Three.git"
+  },
+  "keywords": [
+    "Express",
+    "Socket.IO"
+  ],
+  "author": "Ryan Fleck",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/RyanFleck/Express-Experiment-Three/issues"
+  },
+  "homepage": "https://github.com/RyanFleck/Express-Experiment-Three#readme"
 }
