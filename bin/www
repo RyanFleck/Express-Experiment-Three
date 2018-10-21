@@ -17,9 +17,11 @@ app.set('port', port);
 
 /**
  * Create HTTP server.
+ *  Using a proxy? Code commented:
  */
 
 const server = http.createServer(app);
+// app.set('trust proxy', ['loopback, addr-one', 'linklocal, addr-two']);
 
 /**
  * Listen on provided port, on all network interfaces.

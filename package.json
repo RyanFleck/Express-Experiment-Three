@@ -4,7 +4,9 @@
   "private": true,
   "scripts": {
     "start": "node ./bin/www --exec babel-node -e js",
-    "test": "nodemon ./bin/www --exec babel-node -e js"
+    "test": "nodemon ./bin/www --exec babel-node -e js",
+    "debug:gnu": "DEBUG=express:* nodemon ./bin/www --exec babel-node -e js",
+    "debug:win": "set DEBUG=express:* && nodemon ./bin/www --exec babel-node -e js"
   },
   "dependencies": {
     "cookie-parser": "~1.4.3",
