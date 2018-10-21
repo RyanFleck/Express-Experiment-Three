@@ -2,6 +2,9 @@ extends layout
 
 block content
   h1= title
+  p POST header must have Content-Type of application/x-www-form-urlencoded.
   p This API uses the following paths for REST:
   ol
-    li /
+    li /id/:id returns a user based on user ID.
+    li /id/random returns a random user.
+    li /id/random/:number returns 'number' random users.
